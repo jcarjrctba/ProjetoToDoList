@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: linear-gradient(0, #120c56, #000000);
+  color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  min-width: 385px;
+  height: 100vh;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(30, 29, 29, 0.141);
+  box-shadow: 0 8px 32px 0 rgba(15, 18, 68, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#inputEditToDo {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1.2rem;
+  background: #19181863;
+  color: white;
+  min-width: none;
+  outline: none;
+  text-align: center;
+  max-width: 90%;
+}
+
+.top button,
+#buttonCloseModal {
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  border: none;
+  background: #120c56;
+  color: white;
+  outline: none;
+}
+
+.top button:hover {
+  cursor: pointer;
+}
+
+#buttonUpdateToDo {
+  width: 45px;
+  height: 45px;
+  border-radius: 23px;
+  border: none;
+  background: #120c56;
+  color: white;
+  outline: none;
+}
+
+#toDoList {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+#toDoList li {
+  padding: 10px;
+  background: #19181863;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95%;
+  margin-left: 20px;
+  margin: 20px;
+  min-height: 80px;
+}
+
+.actBtn {
+  border-radius: 20px;
+  border: 1px solid #191818;
+  width: 38px;
+  height: 38px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: #120c56;
+  color: white;
+  outline: none;
+}
+
+#backgroundModal {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.678);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: 0;
+  display: none;
+}
+
+#backgroundModal.opened {
+  display: block;
+}
+
+#editModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  z-index: 1;
+  display: none;
+  width: 90%;
+  min-width: fit-content;
+  background: rgba(30, 29, 29, 0.141);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#editModal.opened {
+  display: block;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
+  height: 160px;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+
+.modalContent button {
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.modalLine {
+  display: flex;
+  min-width: 150px;
+  justify-content: space-around;
+}
+
+.buttonContainer {
+  min-width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spanContainer {
+  min-width: 65%;
+  margin: 5px;
+}

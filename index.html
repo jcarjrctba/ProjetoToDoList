@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.svgrepo.com/show/361306/run-all.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="top">
+        <div>
+          <h1>To-Do-List!</h1>
+        </div>
+        <button id="buttonNewToDo">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <ul id="toDoList"></ul>
+    </div>
+    <div id="editModal">
+      <div class="modalContent">
+        <input
+          type="text"
+          id="inputEditToDo"
+          maxlength="200"
+          placeholder="Inserir tarefa"
+        />
+        <div>
+          <div class="modalLine">
+            <button id="buttonCloseModal">
+              <i class="fa fa-remove"></i>
+            </button>
+            <button id="buttonUpdateToDo">
+              <i class="fa fa-check"></i>
+            </button>
+          </div>
+          <div><h3 id="displayId"></h3></div>
+        </div>
+      </div>
+    </div>
+    <div id="backgroundModal"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
